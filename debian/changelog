@@ -1,0 +1,11 @@
+libzmf (0.0.2-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 18:00:54 +0800
+
+libzmf (0.0.2-deepin) stable; urgency=medium
+
+  * ['Rebuild  against by  current gcc 11.2']
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 18 Aug 2022 17:01:31 +0800

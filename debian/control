@@ -1,0 +1,50 @@
+Source: libzmf
+Priority: optional
+Maintainer: Deepin Developer <deepin-dev@deepin.org>
+Uploaders: Deepin Packages Builder <packages@deepin.org>
+Build-Depends: debhelper (>= 9), dh-autoreconf, librevenge-dev, libboost-dev, pkg-config, zlib1g-dev, libpng-dev, libicu-dev, libcppunit-dev
+Build-Depends-Indep: doxygen
+Standards-Version: 3.9.5
+Section: libs
+
+Package: libzmf-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libzmf-0.0-0 (= ${binary:Version}), ${misc:Depends}, librevenge-dev
+Description: Zoner Draw/Zebra file reading/converting library -- development
+ libzmf is a library and a set of tools for reading and converting
+ Zoner Draw and Zebra file formats.
+ .
+ This package contains the development files needed for developing files against
+ libzmf.
+
+Package: libzmf-0.0-0
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Zoner Draw/Zebra file reading/converting library
+ libzmf is a library and a set of tools for reading and converting
+ Zoner Draw and Zebra file formats.
+
+Package: libzmf-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Zoner Draw/Zebra file reading/converting library -- documentation
+ libzmf is a library and a set of tools for reading and converting
+ Zoner Draw and Zebra file formats.
+ .
+ This package contains the API documentation.
+
+Package: libzmf-tools
+Architecture: any
+Section: graphics
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Zoner Draw/Zebra file reading/converting library -- tools
+ libzmf is a library and a set of tools for reading and converting
+ Zoner Draw and Zebra file formats.
+ .
+ This package contains zmf2svg and zmf2raw to convert zmf files to SVG/RAW.
+
